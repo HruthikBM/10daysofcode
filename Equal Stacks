@@ -1,0 +1,63 @@
+#include<bits/stdc++.h>
+#include<algorithm>
+using namespace std;
+int get(stack<int> q)
+{
+   
+    int sum = 0;
+    stack<int> tsi(q);
+    while (!tsi.empty()) {
+        sum += tsi.top();
+        tsi.pop();
+    }
+    return sum;
+}
+int fun(stack<int> q1,stack<int> q2,stack<int> q3)
+{
+    int s1=get(q1);
+    int s2=get(q2);
+    int s3=get(q3);
+   while ( s1 != s2 || s2 != s3  ){
+ 
+      if(q1.empty()||q2.empty()||q3.empty())
+    {
+      return 0;
+    }
+       
+        if(s1>=s2 && s1>=s3){
+             s1-=q1.top();
+             q1.pop();
+        }
+        else if(s2>=s1 && s2>=s3){
+            s2-=q2.top();
+            q2.pop();
+        }
+        else{
+            s3-=q3.top();
+            q3.pop();
+        }
+    }
+    return s1;
+  
+}
+int main()
+{
+  int n1,n2,n3;
+  cin>>n1>>n2>>n3;
+  stack<int> q1;
+  stack<int> q2;
+  stack<int> q3;
+  int a1[n1],a2[n2],a3[n3];
+  for(int i=0;i<n1;i++) cin>>a1[i];
+   for(int i=0;i<n2;i++) cin>>a2[i];
+    for(int i=0;i<n3;i++) cin>>a3[i];
+
+for(int i=n1-1;i>=0;i--) q1.push(a1[i]);
+   for(int i=n2-1;i>=0;i--) q2.push(a2[i]);
+    for(int i=n3-1;i>=0;i--) q3.push(a3[i]);
+
+  int c;
+  c=fun(q1,q2,q3);
+   cout<<c<<endl;
+  return 0;
+}
