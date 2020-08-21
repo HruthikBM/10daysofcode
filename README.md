@@ -6,7 +6,7 @@ https://github.com/HruthikBM/10daysofcode/blob/master/Left%20Rotation
 
 
 
-day1 Cycle Detection
+day2 Cycle Detection
 https://github.com/HruthikBM/10daysofcode/blob/master/Cycle%20Detection
 ------
 
