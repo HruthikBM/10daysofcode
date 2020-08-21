@@ -2,7 +2,7 @@
 
 day1 Left Rotation 
 https://github.com/HruthikBM/10daysofcode/blob/master/Left%20Rotation
-------
+-----
 
 
 
@@ -19,4 +19,4 @@ day4 Queue using Two Stacks
 https://github.com/HruthikBM/10daysofcode/blob/master/Queue%20using%20Two%20Stacks
 --
 
-my hackerrank profile = https://www.hackerrank.com/hruthikbm
+ ##   my hackerrank profile = https://www.hackerrank.com/hruthikbm 
