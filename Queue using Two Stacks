@@ -1,0 +1,62 @@
+#include<bits/stdc++.h>
+#include<stack>
+using namespace std;
+class Queue
+{
+  public:
+  stack<int> s1,s2;
+  void enQueue(int val){
+    s1.push(val);
+  }
+  void deQueue(){
+    if(s2.empty()){
+      while(!s1.empty()){
+        s2.push(s1.top());
+        s1.pop();
+      }
+    }
+    if(!s2.empty()){
+      s2.pop();
+    }
+  }
+  int front(){
+    if(s2.empty()) {
+      while(!s1.empty()){
+        s2.push(s1.top());
+        s1.pop();
+      }
+    }
+
+    if(!s2.empty()){
+      return s2.top();
+    }
+    else
+     return 0;
+    //return 0;
+  }
+
+};
+int main() {
+  Queue Q;  
+   int q;
+   cin>>q;
+   while(q--)
+   {
+     int i;
+     cin>>i;
+     if(i==1){
+        int val;
+        cin>>val;
+      Q.enQueue(val);
+      }
+     else{
+      if(i==2)
+        Q.deQueue();
+
+     if(i==3)
+        cout<<Q.front()<<endl;  
+     }
+   }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    return 0;
+}
