@@ -19,4 +19,8 @@ day4 Queue using Two Stacks
 https://github.com/HruthikBM/10daysofcode/blob/master/Queue%20using%20Two%20Stacks
 --
 
+day5 sorting: Comparator
+https://github.com/HruthikBM/10daysofcode/blob/master/Sorting:%20Comparator
+---
+
  ##   my hackerrank profile = https://www.hackerrank.com/hruthikbm 
