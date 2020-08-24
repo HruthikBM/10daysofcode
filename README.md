@@ -23,4 +23,10 @@ day5 sorting: Comparator
 https://github.com/HruthikBM/10daysofcode/blob/master/Sorting:%20Comparator
 ---
 
- ##   my hackerrank profile = https://www.hackerrank.com/hruthikbm 
+day7 The Full Counting Sort
+https://github.com/HruthikBM/10daysofcode/commit/18eeb04f9ab3eb17c710a020e7c0b13edb41af20
+---
+
+ 
+ 
+ ## my hackerrank profile = https://www.hackerrank.com/hruthikbm  
