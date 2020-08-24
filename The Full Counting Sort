@@ -1,0 +1,40 @@
+#include<bits/stdc++.h>
+#include<vector>
+using namespace std;
+struct test{
+	int x,y;
+	string s;
+};
+bool sorting(const test &a, const test &b )
+{
+	if(a.y!=b.y)
+	{
+	  return (a.y< b.y);
+	}
+	else
+		return (a.x<b.x);
+
+}
+int main()
+{
+	int n;
+	cin>>n;
+	string s;
+	int v;
+  int ch=n/2;
+	vector<test> vect;
+	for(int i=0;i<n;i++)
+	{
+		cin>>v>>s;	
+		if(i<ch)
+			vect.push_back({i,v,"-"});
+		else
+	       vect.push_back({i,v,s});
+	}
+	sort(vect.begin(),vect.end(),sorting);
+	for(int i=0;i<n;i++)
+	{
+		cout<<vect[i].s<<' ';
+	}
+	return 0;
+}
