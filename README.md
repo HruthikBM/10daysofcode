@@ -26,6 +26,9 @@ https://github.com/HruthikBM/10daysofcode/blob/master/Sorting:%20Comparator
 day7 The Full Counting Sort
 https://github.com/HruthikBM/10daysofcode/commit/18eeb04f9ab3eb17c710a020e7c0b13edb41af20
 ---
+day8 Alice and Bob's Silly Game
+https://github.com/HruthikBM/10daysofcode/commit/1267ad29dace163841f1a7531175a7d3b6fbe48c
+---
 
  
  
