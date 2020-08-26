@@ -1,0 +1,45 @@
+#include<bits/stdc++.h>
+using namespace std;
+int n=100000;
+vector<char> pre(n+1,true);
+void sieve(){
+  pre[0]=pre[1]=false;
+  for(int i=2;i*i<n;i++)
+  {
+    if(pre[i]){
+      for(int j=i*i;j<n;j+=i)
+      {
+        pre[j]=false;
+      }
+    }
+  }
+  pre[0]=pre[1]=true;
+  pre[2]=false;
+  bool ch=false;
+  for(int i=3;i<n;i++)
+  {
+    if(pre[i]){
+      pre[i]=!ch;
+      ch=!ch;
+    }
+    else{
+      pre[i]=ch;
+    }
+       
+  }
+}
+int main()
+{
+  sieve();
+
+  int q;
+  cin>>q;
+  while(q--)
+  {
+    int n;
+    cin>>n;
+    if(pre[n]) cout<<"Bob"<<endl;
+    else cout<<"Alice"<<endl;
+  }
+  return 0;
+}
